@@ -1,0 +1,85 @@
+:root{
+    --blanco: #FFFFFF;/*estructura de costum properties*/
+    --obscuro: #212121;
+    --primario: #FFC107;/*color que mas se usara en la web*/
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+
+}
+/*globales*/
+/*html*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*hack para box model*/ 
+    scroll-snap-type: y mandatory;  /*scroll de arriba-abajo*/
+} 
+h1{
+    color: var(--obscuro);
+    text-align: center;
+    font-size: 100px;
+}
+h2{
+    color: blueviolet;
+    text-align: center;
+    font-size: 50px;
+}
+h3{
+    color: var(--secundario);
+    text-align: center;
+    font-size: 35px;
+}
+span{
+    font-size: 35px;
+}
+time{
+    font-weight: bolder;
+}
+button{
+    float: right;/*aqui le decimos que flote hacia la derecha dentroi¡ del span*/
+    width: 200px;
+    height: 100px;
+    background-color: var(--primario);
+    border-radius: 30px;
+    border: solid;
+    font-size: 25px;
+    font-family: var(--obscuro);
+}
+#profile{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+.contenido{
+    height: 250px;
+    width: 250px;
+
+}
+.contenido p {
+    font-size: small;
+}
+/*estilos del grid*/
+.grid {
+    display: grid;/*agrega el display grid a la clase grid*/
+    grid-template-rows: 100px;/*tamaño de las filas*/
+    grid-template-columns: 1fr 1fr 1fr ;/*tamaño de las columnas*/
+    grid-gap: 5rem;/*espacio entre filas*/
+}
+.grid > div {
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.grid p {
+    text-align: justify;
+    font-weight: bolder;
+}
+/*body*/  
+.img {
+    background-image: url(../img/fondo.jpg); /*imagen de fondo via css*/
+    background-repeat: no-repeat; /*para no repetir imagen insertada antes*/
+    background-size: cover;/*estandariza la imagen, cubre toda la pantalla con cover*/
+}
+body{
+    margin: 3rem;
+    font: 20px system-ui;
+}
